@@ -1,0 +1,225 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+details
+{
+  padding-bottom: 10px;
+}
+.first button
+{
+  visibility: hidden;
+  height: 500px;
+  width: 800px;
+}
+.slide button
+{
+  visibility: hidden;
+  height: 500px;
+  width: 800px;
+}
+#sehir
+{
+  background-color: rgb(159, 226, 157);
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.sehirBilgileri
+{
+  background-color: rgb(159, 226, 157);
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+#Kent,#kanyonSatiri,#marmarisMuzesi,#sehirNufusu
+{
+  background-color: rgb(159, 226, 157);
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+#baslik
+{
+  background-color: rgb(92, 160, 89);
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  #sehir
+  {
+    margin:auto;
+    margin-top: 10px;
+    width: 90%;
+  }
+  .slider
+  {
+    width: 100%;
+  }
+  .navigation-btn
+  {
+    margin-left: -100px;
+  }
+  .imgs_slides img
+  {
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 350px;
+  }
+  
+ 
+  .slide button
+  {
+    visibility: hidden;
+    height: 500px;
+    width: 800px;
+  }
+
+}
+
+.imgs_slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.imgs_slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-btn {
+    border: 2px solid #31e63a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-btn:hover {
+    background: #167523;
+}
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+.topnav {
+    background-color: rgb(159, 226, 157);
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  
+  .topnav a {
+    float:right;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  #myTopnav
+  {
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(115, 228, 111);
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(115, 228, 111);
+    color: white;
+  }
+ 
+
+  @media screen and (max-width: 600px) {
+    .sehirBilgileri
+    {
+      margin-right: 10px;
+    }
+    
+  }
+
+  #slaytYazilari .text 
+  {
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:visible;
+
+  }
+    
+    @media screen and (max-width: 1000px) {
+    
+      .topnav a
+      {
+        
+        float:left;
+        margin-left: 20px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
